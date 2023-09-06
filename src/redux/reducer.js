@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 
 export const contactReducer = (state = [], action) => {
-  // console.log(contactReducer);
   switch (action.type) {
     case 'contact/addContact':
       return [...state, action.payload];
